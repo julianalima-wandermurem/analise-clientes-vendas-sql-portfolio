@@ -1,0 +1,13 @@
+id_venda,id_cliente,produto,valor
+1,1,Seguro,500
+2,1,Consorcio,800
+3,2,Seguro,700
+4,3,Consorcio,1000
+5,4,Seguro,900
+6,5,Investimento,600
+7,6,Seguro,500
+8,7,Consorcio,700
+9,8,Seguro,1000
+10,9,Investimento,900
+11,10,Seguro,600
+12,10,Consorcio,700
