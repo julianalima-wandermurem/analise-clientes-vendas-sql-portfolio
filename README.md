@@ -10,28 +10,29 @@ A análise simula um cenário de uma empresa do setor financeiro, permitindo exp
 
 ## 🎯 Objetivos
 
-- Analisar o perfil dos clientes
-- Identificar a quantidade de clientes por cidade
-- Comparar o salário médio entre cidades
-- Calcular o gasto total por cliente
-- Analisar o faturamento por produto
-- Identificar clientes com maior volume de compras
-- Identificar clientes com gasto superior a R$ 800
-- Calcular o ticket médio dos produtos
+* Analisar o perfil dos clientes
+* Identificar a quantidade de clientes por cidade
+* Comparar o salário médio entre cidades
+* Calcular o gasto total por cliente
+* Analisar o faturamento por produto
+* Identificar clientes com maior volume de compras
+* Identificar clientes com gasto superior a R$ 800
+* Calcular o ticket médio dos produtos
 
 ## 🛠️ Tecnologias e conhecimentos utilizados
 
-- SQL
-- SELECT
-- WHERE
-- INNER JOIN
-- GROUP BY
-- HAVING
-- COUNT
-- SUM
-- AVG
-- ORDER BY
-- LIMIT
+* SQL
+* SELECT
+* WHERE
+* INNER JOIN
+* GROUP BY
+* HAVING
+* COUNT
+* SUM
+* AVG
+* ORDER BY
+* LIMIT
+* Subqueries
 
 ## 🔎 Análises realizadas
 
@@ -55,13 +56,13 @@ Identificação dos produtos que geraram maior faturamento.
 
 Aplicação de `HAVING` para identificar clientes cujo gasto total ultrapassou R$ 800.
 
-### 6. Cliente com maior número de compras
+### 6. Clientes com maior número de compras
 
-Contagem das compras realizadas por cada cliente e identificação do maior volume.
+Contagem das compras realizadas por cada cliente e identificação dos clientes que apresentam o maior volume de compras, considerando possíveis empates.
 
 ### 7. Ticket médio por produto
 
-Cálculo do valor médio das vendas de cada produto.
+Cálculo do valor médio das vendas de cada produto e identificação do produto com maior ticket médio.
 
 ### 8. Análise completa de clientes e vendas
 
@@ -71,20 +72,22 @@ Combinação de informações de clientes e vendas para analisar gasto total e q
 
 A análise realizada identificou:
 
-- Rio de Janeiro possui 4 clientes na base.
-- Niterói possui 3 clientes.
-- São Paulo possui 3 clientes.
-- São Paulo apresenta o maior salário médio entre as cidades analisadas.
-- Ana e Juliana possuem o maior gasto total, com R$ 1.300 cada.
-- Seguro apresenta o maior faturamento total, com R$ 4.200.
-- Ana e Juliana realizaram o maior número de compras, com 2 compras cada.
-- Consórcio apresenta o maior ticket médio, com R$ 800.
+* Rio de Janeiro possui 4 clientes na base.
+* Niterói possui 3 clientes.
+* São Paulo possui 3 clientes.
+* São Paulo apresenta o maior salário médio entre as cidades analisadas.
+* Ana e Juliana possuem o maior gasto total, com R$ 1.300 cada.
+* Seguro apresenta o maior faturamento total, com R$ 4.200.
+* Ana e Juliana realizaram o maior número de compras, com 2 compras cada.
+* Consórcio apresenta o maior ticket médio, com R$ 800.
 
 ## 💡 Conclusão
 
 O projeto demonstra como SQL pode ser utilizado para transformar dados de clientes e vendas em informações relevantes para análises de negócio.
 
-Durante o desenvolvimento, foram praticados conceitos fundamentais de SQL, incluindo agregações, agrupamentos, filtros, ordenação e relacionamentos entre tabelas.
+Durante o desenvolvimento, foram praticados conceitos fundamentais de SQL, incluindo agregações, agrupamentos, filtros, ordenação, relacionamentos entre tabelas e subconsultas.
+
+A análise também demonstra a importância de interpretar os resultados considerando situações como empates, evitando conclusões incompletas a partir dos dados.
 
 Este projeto faz parte do meu desenvolvimento profissional na área de Análise de Dados e representa minha prática na aplicação de SQL a problemas de negócio.
 
@@ -101,3 +104,11 @@ analise-clientes-vendas-sql-portfolio/
 │
 └── sql/
     └── analise_clientes_vendas.sql
+```
+
+## 👩‍💻 Sobre mim
+
+Estou em formação na área de Análise de Dados, desenvolvendo conhecimentos em SQL, Excel, Power BI, Python e ferramentas de análise e visualização de dados.
+
+Este projeto representa uma das etapas do meu desenvolvimento prático em SQL.
+
