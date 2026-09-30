@@ -75,9 +75,9 @@ A análise realizada identificou:
 - Niterói possui 3 clientes.
 - São Paulo possui 3 clientes.
 - São Paulo apresenta o maior salário médio entre as cidades analisadas.
-- Ana possui o maior gasto total, com R$ 1.300.
-- Seguro apresenta o maior faturamento total, com R$ 3.200.
-- Ana realizou o maior número de compras, com 2 compras.
+- Ana e Juliana possuem o maior gasto total, com R$ 1.300 cada.
+- Seguro apresenta o maior faturamento total, com R$ 4.200.
+- Ana e Juliana realizaram o maior número de compras, com 2 compras cada.
 - Consórcio apresenta o maior ticket médio, com R$ 800.
 
 ## 💡 Conclusão
