@@ -1,3 +1,4 @@
+```sql
 -- ============================================================
 -- PROJETO: Análise de Clientes e Vendas com SQL
 -- ============================================================
@@ -58,8 +59,8 @@ HAVING SUM(vendas.valor) > 800
 ORDER BY gasto_total DESC;
 
 
--- 6. CLIENTE COM MAIOR NÚMERO DE COMPRAS
--- Pergunta: Qual cliente realizou mais compras?
+-- 6. CLIENTES COM MAIOR NÚMERO DE COMPRAS
+-- Pergunta: Quais clientes realizaram mais compras?
 
 SELECT clientes.nome,
        COUNT(vendas.id_venda) AS quantidade_compras
@@ -67,8 +68,16 @@ FROM clientes
 INNER JOIN vendas
     ON clientes.id_cliente = vendas.id_cliente
 GROUP BY clientes.id_cliente, clientes.nome
-ORDER BY quantidade_compras DESC
-LIMIT 1;
+HAVING COUNT(vendas.id_venda) = (
+    SELECT MAX(quantidade_compras)
+    FROM (
+        SELECT COUNT(vendas.id_venda) AS quantidade_compras
+        FROM clientes
+        INNER JOIN vendas
+            ON clientes.id_cliente = vendas.id_cliente
+        GROUP BY clientes.id_cliente
+    ) AS compras_por_cliente
+);
 
 
 -- 7. TICKET MÉDIO POR PRODUTO
@@ -98,3 +107,5 @@ GROUP BY clientes.id_cliente,
          clientes.cidade,
          clientes.salario
 ORDER BY gasto_total DESC;
+```
+
